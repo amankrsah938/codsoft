@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#nav h1{
+    font-size: 30px;
+    font-weight: 100;
+}
+#nav .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav .navigation a{
+    text-decoration: none;
+    color: #222;
+    margin: 20px;
+}
+#nav .navigation a:nth-last-child(1){
+    padding: 7px 18px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+
+}
+#nav .navigation a:nth-last-child(1) .green{
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: left 0.4s ease;
+}
+#nav .navigation a:nth-last-child(1):hover .green{
+    left: 0;
+}
+#main>h1{
+    font-size: 5.4vw;
+    font-weight: 100;
+    width: 60%;
+    text-align: center;
+    text-transform: capitalize;
+    z-index: 99;
+    color:rgb(143, 227, 235);
+}
+#main .img1{
+    height: 400px;
+    width: 290px;
+    position: absolute;
+    left: 7%;
+    top: 20%;
+}
+#main .img2{
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    right: 7%;
+    top: 20%;
+}
+#main .img3{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    left: 7%;
+    bottom: 8%;
+    margin-left: 65%;
+}
+
+
+
